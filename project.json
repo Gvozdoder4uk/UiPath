@@ -3,6 +3,7 @@
   "description": "Проверка поступающих документов и их парсинг в нужные департаменты.",
   "main": "Main.xaml",
   "dependencies": {
+    "Microsoft.Activities.Extensions": "[2.0.6.9]",
     "UiPath.Excel.Activities": "[2.8.0-preview]",
     "UiPath.Mail.Activities": "[1.8.0-preview]",
     "UiPath.System.Activities": "[19.12.0-preview]",
@@ -11,7 +12,7 @@
   "webServices": [],
   "schemaVersion": "4.0",
   "studioVersion": "19.12.0.61",
-  "projectVersion": "1.0.3",
+  "projectVersion": "1.0.14",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
