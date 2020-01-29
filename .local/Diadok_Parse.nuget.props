@@ -15,5 +15,6 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgExtended_Wpf_Toolkit Condition=" '$(PkgExtended_Wpf_Toolkit)' == '' ">C:\Users\fokin_ok\.nuget\packages\extended.wpf.toolkit\2.8.0</PkgExtended_Wpf_Toolkit>
     <PkgMicrosoft_Activities_Extensions Condition=" '$(PkgMicrosoft_Activities_Extensions)' == '' ">C:\Users\fokin_ok\.nuget\packages\microsoft.activities.extensions\2.0.6.9</PkgMicrosoft_Activities_Extensions>
+    <PkgChromium_ChromeDriver Condition=" '$(PkgChromium_ChromeDriver)' == '' ">C:\Users\fokin_ok\.nuget\packages\chromium.chromedriver\2.37.0</PkgChromium_ChromeDriver>
   </PropertyGroup>
 </Project>
