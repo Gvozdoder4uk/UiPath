@@ -2,6 +2,33 @@
   "Packages": [
     {
       "Package": {
+        "Id": "Chromium.ChromeDriver",
+        "Version": "2.37.0"
+      },
+      "Assemblies": [],
+      "Path": "C:\\Users\\fokin_ok\\.nuget\\packages\\chromium.chromedriver/2.37.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Activities.Extensions",
+        "Version": "2.0.6.9"
+      },
+      "Assemblies": [
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.Design.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.dll"
+      ],
+      "Path": "C:\\Users\\fokin_ok\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9"
+    },
+    {
+      "Package": {
+        "Id": "Selenium.Chrome.WebDriver",
+        "Version": "79.0.0"
+      },
+      "Assemblies": [],
+      "Path": "C:\\Users\\fokin_ok\\.nuget\\packages\\selenium.chrome.webdriver/79.0.0"
+    },
+    {
+      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.8.0-preview"
       },
@@ -22,7 +49,8 @@
         "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.excel.activities/2.8.0-preview\\lib/net461/UiPath.Excel.Activities.Design.dll",
         "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.excel.activities/2.8.0-preview\\lib/net461/UiPath.Excel.Activities.dll",
         "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.excel.activities/2.8.0-preview\\lib/net461/UiPath.Excel.dll"
-      ]
+      ],
+      "Path": "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.excel.activities/2.8.0-preview"
     },
     {
       "Package": {
@@ -40,31 +68,33 @@
         "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.mail.activities/1.8.0-preview\\lib/net461/UiPath.Mail.Activities.Design.dll",
         "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.mail.activities/1.8.0-preview\\lib/net461/UiPath.Mail.Activities.dll",
         "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.mail.activities/1.8.0-preview\\lib/net461/UiPath.Mail.dll"
-      ]
+      ],
+      "Path": "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.mail.activities/1.8.0-preview"
     },
     {
       "Package": {
-        "Id": "UiPath.System.Activities",
-        "Version": "19.12.0-preview"
+        "Id": "UiPath.MicrosoftOffice365.Activities",
+        "Version": "1.1.2"
       },
       "Assemblies": [
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\microsoft.aspnet.signalr.client/2.4.0\\lib/net45/Microsoft.AspNet.SignalR.Client.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.20\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\newtonsoft.json/12.0.2\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/19.12.0-preview\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/19.12.0-preview\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/19.12.0-preview\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/19.12.0-preview\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/19.12.0-preview\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/19.12.0-preview\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/19.12.0-preview\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/19.12.0-preview\\lib/net461/ActiproSoftware.Text.Wpf.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/19.12.0-preview\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/19.12.0-preview\\lib/net461/UiPath.OrchestratorClient.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/19.12.0-preview\\lib/net461/UiPath.System.Activities.Design.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/19.12.0-preview\\lib/net461/UiPath.System.Activities.dll"
-      ]
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\bouncycastle/1.8.5\\lib/BouncyCastle.Crypto.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\closedxml/0.94.2\\lib/net46/ClosedXML.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\documentformat.openxml/2.7.2\\lib/net46/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\excelnumberformat/1.0.3\\lib/net20/ExcelNumberFormat.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\fastmember/1.3.0\\lib/net45/FastMember.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\microsoft.graph/1.12.0\\lib/net45/Microsoft.Graph.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\microsoft.graph.core/1.12.0\\lib/net45/Microsoft.Graph.Core.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\microsoft.identity.client/2.7.1\\lib/net45/Microsoft.Identity.Client.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\mimekit/2.1.3\\lib/net45/MimeKit.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\system.io.filesystem.primitives/4.0.1\\lib/net46/System.IO.FileSystem.Primitives.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\system.io.packaging/4.0.0\\lib/net46/System.IO.Packaging.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.5.1\\lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.microsoftoffice365.activities/1.1.2\\lib/net461/UiPath.MicrosoftOffice365.Activities.Design.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.microsoftoffice365.activities/1.1.2\\lib/net461/UiPath.MicrosoftOffice365.Activities.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.microsoftoffice365.activities/1.1.2\\lib/net461/UiPath.MicrosoftOffice365.dll"
+      ],
+      "Path": "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.microsoftoffice365.activities/1.1.2"
     },
     {
       "Package": {
@@ -80,7 +110,7 @@
         "C:\\Users\\fokin_ok\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll",
         "C:\\Users\\fokin_ok\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll",
         "C:\\Users\\fokin_ok\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\newtonsoft.json/12.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
         "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath/19.12.7284.25613-preview\\lib/UiPath.Interop.dll",
         "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.ocr.contracts/2.3.0-preview\\lib/net45/UiPath.OCR.Contracts.dll",
         "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.uiautomation.activities/19.12.0-preview\\lib/net461/ActiproSoftware.DataGrid.Contrib.Wpf.dll",
@@ -107,95 +137,121 @@
         "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.MicrosoftCloud.dll",
         "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.Tesseract.dll",
         "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "Microsoft.Activities.Extensions",
-        "Version": "2.0.6.9"
-      },
-      "Assemblies": [
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.Design.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "UiPath.MicrosoftOffice365.Activities",
-        "Version": "1.1.2"
-      },
-      "Assemblies": [
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\bouncycastle/1.8.5\\lib/BouncyCastle.Crypto.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\closedxml/0.94.2\\lib/net46/ClosedXML.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\documentformat.openxml/2.7.2\\lib/net46/DocumentFormat.OpenXml.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\excelnumberformat/1.0.3\\lib/net20/ExcelNumberFormat.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\fastmember/1.3.0\\lib/net45/FastMember.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\microsoft.graph/1.12.0\\lib/net45/Microsoft.Graph.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\microsoft.graph.core/1.12.0\\lib/net45/Microsoft.Graph.Core.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\microsoft.identity.client/2.7.1\\lib/net45/Microsoft.Identity.Client.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\mimekit/2.1.3\\lib/net45/MimeKit.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\newtonsoft.json/12.0.2\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\system.io.filesystem.primitives/4.0.1\\lib/net46/System.IO.FileSystem.Primitives.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\system.io.packaging/4.0.0\\lib/net46/System.IO.Packaging.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.5.2\\lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.microsoftoffice365.activities/1.1.2\\lib/net461/UiPath.MicrosoftOffice365.Activities.Design.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.microsoftoffice365.activities/1.1.2\\lib/net461/UiPath.MicrosoftOffice365.Activities.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.microsoftoffice365.activities/1.1.2\\lib/net461/UiPath.MicrosoftOffice365.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "Selenium.Chrome.WebDriver",
-        "Version": "79.0.0"
-      },
-      "Assemblies": []
-    },
-    {
-      "Package": {
-        "Id": "Chromium.ChromeDriver",
-        "Version": "2.37.0"
-      },
-      "Assemblies": []
+      ],
+      "Path": "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.uiautomation.activities/19.12.0-preview"
     },
     {
       "Package": {
         "Id": "ChromeHtmlToPdf",
-        "Version": "1.4.7"
+        "Version": "1.5.3"
       },
       "Assemblies": [
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\anglesharp/0.12.1\\lib/net46/AngleSharp.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\anglesharp.css/0.12.1\\lib/net46/AngleSharp.Css.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\chromehtmltopdf/1.4.7\\lib/ChromeHtmlToPdfLib.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\newtonsoft.json/12.0.2\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\system.collections.specialized/4.3.0\\lib/net46/System.Collections.Specialized.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.5.2\\lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\system.text.encoding.codepages/4.5.1\\lib/net461/System.Text.Encoding.CodePages.dll",
-        "C:\\Users\\fokin_ok\\.nuget\\packages\\websocketsharp/1.0.3-rc11\\lib/websocket-sharp.dll"
-      ]
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\chromehtmltopdf/1.5.3\\lib/ChromeHtmlToPdfLib.dll"
+      ],
+      "Path": "C:\\Users\\fokin_ok\\.nuget\\packages\\chromehtmltopdf/1.5.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.OmniPage.Activities",
+        "Version": "1.3.0-preview"
+      },
+      "Assemblies": [
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.ocr.contracts/2.3.0-preview\\lib/net45/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.activities/1.3.0-preview\\lib/net452/UiPath.OmniPage.Activities.Design.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.activities/1.3.0-preview\\lib/net452/UiPath.OmniPage.Activities.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.activities/1.3.0-preview\\lib/net452/UiPath.Vision.OmniPage.Core.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.activities/1.3.0-preview\\lib/net452/UiPath.Vision.OmniPage.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/AppHelper.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/AppProductConfig.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/AppUtils.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/atm2lll.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/Bnt.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/CRX.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/Defaults.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/Firewrx.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/FireWrx2.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/FireWrx3.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/FireWrx4.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/FireWrx5.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/FireWrx6.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/Formatter.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/ICDLLW32.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/ICHUNW32.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/IF_PNG.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/jp2k_kdu_apps_vnew.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/kdu_vnewR.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/KernelAPI.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/LecsoMgr.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/LEditor.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/MiddleEarth.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/Mor.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/Mor2.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/Mor3.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/Mor4.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/Mor5.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/Mor6.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/MorIF.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/msvcp140.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/Nuance.OmniPage.CSDK.ArgTypes.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/Nuance.OmniPage.CSDK.CAPI.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/Nuance.OmniPage.CSDK.Objects.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/pccext.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/pccext2.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/pccext3.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/pccext4.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/pccext5.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/pccext6.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/PreRendering.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/RecAPIPlus.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/RecDiag.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/RecPDFNet.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/Rendering.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/Rendering2.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/rndsdawg.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/rndsinso.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/SkinnedClasses.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/SkinnedWindows.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/SPDFLib.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/UiPath.OmniPage.Bundle.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/vcruntime140.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/xocr.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/xocr2.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/xocr3.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/xocr4.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/xocr5.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.bundle/1.0.1\\lib/net452/xocr6.dll"
+      ],
+      "Path": "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.omnipage.activities/1.3.0-preview"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.System.Activities",
+        "Version": "20.2.0-preview"
+      },
+      "Assemblies": [
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\microsoft.aspnet.signalr.client/2.4.0\\lib/net45/Microsoft.AspNet.SignalR.Client.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.20\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/20.2.0-preview\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/20.2.0-preview\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/20.2.0-preview\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/20.2.0-preview\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/20.2.0-preview\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/20.2.0-preview\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/20.2.0-preview\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/20.2.0-preview\\lib/net461/ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/20.2.0-preview\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/20.2.0-preview\\lib/net461/UiPath.OrchestratorClient.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/20.2.0-preview\\lib/net461/UiPath.System.Activities.Design.dll",
+        "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/20.2.0-preview\\lib/net461/UiPath.System.Activities.dll"
+      ],
+      "Path": "C:\\Users\\fokin_ok\\.nuget\\packages\\uipath.system.activities/20.2.0-preview"
     }
   ],
   "Conflicts": [],
   "ResolvedDependencies": {
-    "AngleSharp": {
-      "Id": "AngleSharp",
-      "Version": "0.12.1",
-      "Dependencies": [
-        {
-          "Item1": "System.Text.Encoding.CodePages",
-          "Item2": "[4.5.0, )"
-        }
-      ]
-    },
-    "AngleSharp.Css": {
-      "Id": "AngleSharp.Css",
-      "Version": "0.12.1",
-      "Dependencies": [
-        {
-          "Item1": "AngleSharp",
-          "Item2": "[0.12.1, )"
-        }
-      ]
-    },
     "AvalonEdit": {
       "Id": "AvalonEdit",
       "Version": "5.0.3",
@@ -208,57 +264,8 @@
     },
     "ChromeHtmlToPdf": {
       "Id": "ChromeHtmlToPdf",
-      "Version": "1.4.7",
-      "Dependencies": [
-        {
-          "Item1": "AngleSharp",
-          "Item2": "[0.12.1, )"
-        },
-        {
-          "Item1": "AngleSharp.Css",
-          "Item2": "[0.12.1, )"
-        },
-        {
-          "Item1": "Newtonsoft.Json",
-          "Item2": "[12.0.2, )"
-        },
-        {
-          "Item1": "System.Collections.Specialized",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Linq",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Management",
-          "Item2": "[4.5.0, )"
-        },
-        {
-          "Item1": "System.Runtime.CompilerServices.Unsafe",
-          "Item2": "[4.5.2, )"
-        },
-        {
-          "Item1": "System.Runtime.Extensions",
-          "Item2": "[4.3.1, )"
-        },
-        {
-          "Item1": "System.Text.Encoding.CodePages",
-          "Item2": "[4.5.1, )"
-        },
-        {
-          "Item1": "System.Text.RegularExpressions",
-          "Item2": "[4.3.1, )"
-        },
-        {
-          "Item1": "System.Threading",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "WebSocketSharp",
-          "Item2": "[1.0.3-rc11, )"
-        }
-      ]
+      "Version": "1.5.3",
+      "Dependencies": []
     },
     "Chromium.ChromeDriver": {
       "Id": "Chromium.ChromeDriver",
@@ -399,7 +406,7 @@
     },
     "Newtonsoft.Json": {
       "Id": "Newtonsoft.Json",
-      "Version": "12.0.2",
+      "Version": "11.0.2",
       "Dependencies": []
     },
     "NPOI": {
@@ -422,11 +429,6 @@
       "Version": "1.0.0",
       "Dependencies": []
     },
-    "System.Collections.Specialized": {
-      "Id": "System.Collections.Specialized",
-      "Version": "4.3.0",
-      "Dependencies": []
-    },
     "System.IO.FileSystem.Primitives": {
       "Id": "System.IO.FileSystem.Primitives",
       "Version": "4.0.1",
@@ -442,44 +444,9 @@
         }
       ]
     },
-    "System.Linq": {
-      "Id": "System.Linq",
-      "Version": "4.3.0",
-      "Dependencies": []
-    },
-    "System.Management": {
-      "Id": "System.Management",
-      "Version": "4.5.0",
-      "Dependencies": []
-    },
     "System.Runtime.CompilerServices.Unsafe": {
       "Id": "System.Runtime.CompilerServices.Unsafe",
-      "Version": "4.5.2",
-      "Dependencies": []
-    },
-    "System.Runtime.Extensions": {
-      "Id": "System.Runtime.Extensions",
-      "Version": "4.3.1",
-      "Dependencies": []
-    },
-    "System.Text.Encoding.CodePages": {
-      "Id": "System.Text.Encoding.CodePages",
       "Version": "4.5.1",
-      "Dependencies": [
-        {
-          "Item1": "System.Runtime.CompilerServices.Unsafe",
-          "Item2": "[4.5.2, )"
-        }
-      ]
-    },
-    "System.Text.RegularExpressions": {
-      "Id": "System.Text.RegularExpressions",
-      "Version": "4.3.1",
-      "Dependencies": []
-    },
-    "System.Threading": {
-      "Id": "System.Threading",
-      "Version": "4.3.0",
       "Dependencies": []
     },
     "System.ValueTuple": {
@@ -579,9 +546,32 @@
       "Version": "2.3.0-preview",
       "Dependencies": []
     },
+    "UiPath.OmniPage.Activities": {
+      "Id": "UiPath.OmniPage.Activities",
+      "Version": "1.3.0-preview",
+      "Dependencies": [
+        {
+          "Item1": "UiPath.OCR.Contracts",
+          "Item2": "[2.3.0-preview, )"
+        },
+        {
+          "Item1": "UiPath.OmniPage.Bundle",
+          "Item2": "[1.0.1, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        }
+      ]
+    },
+    "UiPath.OmniPage.Bundle": {
+      "Id": "UiPath.OmniPage.Bundle",
+      "Version": "1.0.1",
+      "Dependencies": []
+    },
     "UiPath.System.Activities": {
       "Id": "UiPath.System.Activities",
-      "Version": "19.12.0-preview",
+      "Version": "20.2.0-preview",
       "Dependencies": [
         {
           "Item1": "CsvHelper",
@@ -644,11 +634,6 @@
           "Item2": "[2.2.1, )"
         }
       ]
-    },
-    "WebSocketSharp": {
-      "Id": "WebSocketSharp",
-      "Version": "1.0.3-rc11",
-      "Dependencies": []
     }
   }
 }

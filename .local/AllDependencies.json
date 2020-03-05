@@ -2,30 +2,6 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.6.1": {
-      "AngleSharp/0.12.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Text.Encoding.CodePages": "4.5.0"
-        },
-        "compile": {
-          "lib/net46/_._": {}
-        },
-        "runtime": {
-          "lib/net46/AngleSharp.dll": {}
-        }
-      },
-      "AngleSharp.Css/0.12.1": {
-        "type": "package",
-        "dependencies": {
-          "AngleSharp": "0.12.1"
-        },
-        "compile": {
-          "lib/net46/_._": {}
-        },
-        "runtime": {
-          "lib/net46/AngleSharp.Css.dll": {}
-        }
-      },
       "AvalonEdit/5.0.3": {
         "type": "package",
         "compile": {
@@ -44,25 +20,8 @@
           "lib/BouncyCastle.Crypto.dll": {}
         }
       },
-      "ChromeHtmlToPdf/1.4.7": {
+      "ChromeHtmlToPdf/1.5.3": {
         "type": "package",
-        "dependencies": {
-          "AngleSharp": "0.12.1",
-          "AngleSharp.Css": "0.12.1",
-          "Newtonsoft.Json": "12.0.2",
-          "System.Collections.Specialized": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Management": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.2",
-          "System.Runtime.Extensions": "4.3.1",
-          "System.Text.Encoding.CodePages": "4.5.1",
-          "System.Text.RegularExpressions": "4.3.1",
-          "System.Threading": "4.3.0",
-          "WebSocketSharp": "1.0.3-rc11"
-        },
-        "frameworkAssemblies": [
-          "System"
-        ],
         "compile": {
           "lib/_._": {}
         },
@@ -348,7 +307,7 @@
           "lib/net45/MimeKit.dll": {}
         }
       },
-      "Newtonsoft.Json/12.0.2": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
           "lib/net45/_._": {}
@@ -387,19 +346,6 @@
           "lib/net45/ICSharpCode.SharpZipLib.dll": {}
         }
       },
-      "System.Collections.Specialized/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/_._": {}
-        },
-        "runtime": {
-          "lib/net46/System.Collections.Specialized.dll": {}
-        }
-      },
       "System.IO.FileSystem.Primitives/4.0.1": {
         "type": "package",
         "frameworkAssemblies": [
@@ -428,98 +374,13 @@
           "lib/net46/System.IO.Packaging.dll": {}
         }
       },
-      "System.Linq/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Core"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Management/4.5.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Management"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net45/_._": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/_._": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-        }
-      },
-      "System.Runtime.Extensions/4.3.1": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Text.Encoding.CodePages/4.5.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
-        },
-        "compile": {
-          "lib/net461/_._": {}
-        },
-        "runtime": {
-          "lib/net461/System.Text.Encoding.CodePages.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "System.Text.RegularExpressions/4.3.1": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Threading/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "System.Core"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
         }
       },
       "System.ValueTuple/4.5.0": {
@@ -916,7 +777,107 @@
           "lib/net45/UiPath.OCR.Contracts.dll": {}
         }
       },
-      "UiPath.System.Activities/19.12.0-preview": {
+      "UiPath.OmniPage.Activities/1.3.0-preview": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "UiPath.OCR.Contracts": "2.3.0-preview",
+          "UiPath.OmniPage.Bundle": "1.0.1"
+        },
+        "compile": {
+          "lib/net452/_._": {}
+        },
+        "runtime": {
+          "lib/net452/UiPath.OmniPage.Activities.Design.dll": {},
+          "lib/net452/UiPath.OmniPage.Activities.dll": {},
+          "lib/net452/UiPath.OmniPage.Host32.exe": {},
+          "lib/net452/UiPath.Vision.OmniPage.Core.dll": {},
+          "lib/net452/UiPath.Vision.OmniPage.dll": {}
+        },
+        "resource": {
+          "lib/net452/de/UiPath.OmniPage.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net452/de/UiPath.OmniPage.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net452/es-MX/UiPath.OmniPage.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net452/es-MX/UiPath.OmniPage.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net452/es/UiPath.OmniPage.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net452/es/UiPath.OmniPage.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net452/fr/UiPath.OmniPage.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net452/fr/UiPath.OmniPage.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net452/ja/UiPath.OmniPage.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net452/ja/UiPath.OmniPage.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net452/ko/UiPath.OmniPage.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net452/ko/UiPath.OmniPage.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net452/pt-BR/UiPath.OmniPage.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net452/pt-BR/UiPath.OmniPage.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net452/pt/UiPath.OmniPage.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net452/pt/UiPath.OmniPage.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net452/ru/UiPath.OmniPage.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net452/ru/UiPath.OmniPage.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net452/tr/UiPath.OmniPage.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net452/tr/UiPath.OmniPage.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net452/zh-CN/UiPath.OmniPage.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net452/zh-CN/UiPath.OmniPage.Activities.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
+      "UiPath.OmniPage.Bundle/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net452/_._": {}
+        },
+        "runtime": {
+          "lib/net452/Nuance.OmniPage.CSDK.ArgTypes.dll": {},
+          "lib/net452/Nuance.OmniPage.CSDK.CAPI.dll": {},
+          "lib/net452/Nuance.OmniPage.CSDK.Objects.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "UiPath.System.Activities/20.2.0-preview": {
         "type": "package",
         "dependencies": {
           "CsvHelper": "2.13.5",
@@ -1257,51 +1218,10 @@
           "lib/net452/UiPath.Vision.Core.dll": {},
           "lib/net452/UiPath.Vision.dll": {}
         }
-      },
-      "WebSocketSharp/1.0.3-rc11": {
-        "type": "package",
-        "compile": {
-          "lib/_._": {}
-        },
-        "runtime": {
-          "lib/websocket-sharp.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "AngleSharp/0.12.1": {
-      "sha512": "P2dlrv3WyMeM7YCwD8Zpz4uuAs4KBwbGG9CYQvok0HViaOk0Lb2+H2buaDwVHw+inThGFAbQUC0ypbXtC2biHg==",
-      "type": "package",
-      "path": "anglesharp/0.12.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "anglesharp.0.12.1.nupkg.sha512",
-        "anglesharp.nuspec",
-        "lib/net46/AngleSharp.dll",
-        "lib/net46/AngleSharp.xml",
-        "lib/netstandard1.3/AngleSharp.dll",
-        "lib/netstandard1.3/AngleSharp.xml",
-        "lib/netstandard2.0/AngleSharp.dll",
-        "lib/netstandard2.0/AngleSharp.xml"
-      ]
-    },
-    "AngleSharp.Css/0.12.1": {
-      "sha512": "FVY7sNAKHT55N7pwuQ5jPYgZIf5jCrxfskHh7Ecv2WoafcvnXjS8aa8yHrpwQKBHK+72aNHLqDCwI1JsnJCmxg==",
-      "type": "package",
-      "path": "anglesharp.css/0.12.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "anglesharp.css.0.12.1.nupkg.sha512",
-        "anglesharp.css.nuspec",
-        "lib/net46/AngleSharp.Css.dll",
-        "lib/net46/AngleSharp.Css.xml",
-        "lib/netstandard2.0/AngleSharp.Css.dll",
-        "lib/netstandard2.0/AngleSharp.Css.xml"
-      ]
-    },
     "AvalonEdit/5.0.3": {
       "sha512": "L5CgXRniZRxI/tjoBztVgZnvTL1F/qKrRJa+Q88I0Gl78WRNaqdMkuOlkAsOHTauBGZSQNDO0/X+xIpzfzmLdQ==",
       "type": "package",
@@ -1330,14 +1250,14 @@
         "lib/BouncyCastle.Crypto.dll"
       ]
     },
-    "ChromeHtmlToPdf/1.4.7": {
-      "sha512": "A9xLGGHg5KV+zYIQW9njXYtGuY3cmWDA/6RQV3zSRerUScXguvDtiy0o6H1X0+pQkoTKiMazlgFsBGbWnml3pg==",
+    "ChromeHtmlToPdf/1.5.3": {
+      "sha512": "+JXoFcf8Ar46upGzhK7DBhP+gWBUiEuutZcXS9RIGu/QVtoIjfrW7xil2GoQPTDgrbPl4RY8SqvMWxnRxVbmmg==",
       "type": "package",
-      "path": "chromehtmltopdf/1.4.7",
+      "path": "chromehtmltopdf/1.5.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "chromehtmltopdf.1.4.7.nupkg.sha512",
+        "chromehtmltopdf.1.5.3.nupkg.sha512",
         "chromehtmltopdf.nuspec",
         "lib/ChromeHtmlToPdfLib.dll",
         "lib/ChromeHtmlToPdfLib.pdb",
@@ -1710,10 +1630,10 @@
         "mimekit.nuspec"
       ]
     },
-    "Newtonsoft.Json/12.0.2": {
-      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
-      "path": "newtonsoft.json/12.0.2",
+      "path": "newtonsoft.json/11.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1736,7 +1656,7 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.2.nupkg.sha512",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
       ]
     },
@@ -1802,45 +1722,6 @@
         "sharpziplib.nuspec"
       ]
     },
-    "System.Collections.Specialized/4.3.0": {
-      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
-      "type": "package",
-      "path": "system.collections.specialized/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Collections.Specialized.dll",
-        "lib/netstandard1.3/System.Collections.Specialized.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Collections.Specialized.dll",
-        "ref/netstandard1.3/System.Collections.Specialized.dll",
-        "ref/netstandard1.3/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/de/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/es/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/fr/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/it/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/ja/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/ko/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/ru/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/zh-hans/System.Collections.Specialized.xml",
-        "ref/netstandard1.3/zh-hant/System.Collections.Specialized.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.collections.specialized.4.3.0.nupkg.sha512",
-        "system.collections.specialized.nuspec"
-      ]
-    },
     "System.IO.FileSystem.Primitives/4.0.1": {
       "sha512": "kWkKD203JJKxJeE74p8aF8y4Qc9r9WQx4C0cHzHPrY3fv/L/IhWnyCHaFJ3H1QPOH6A93whlQ2vG5nHlBDvzWQ==",
       "type": "package",
@@ -1897,103 +1778,10 @@
         "system.io.packaging.nuspec"
       ]
     },
-    "System.Linq/4.3.0": {
-      "sha512": "5DbqIUpsDp0dFftytzuMmc0oeMdQwjcP/EWxsksIz/w1TcFRkZ3yKKz0PqiYFMmEwPSWw+qNVqD7PJ889JzHbw==",
+    "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "sha512": "Zh8t8oqolRaFa9vmOZfdQm/qKejdqz0J9kr7o2Fu0vPeoH3BL1EOXipKWwkWtLT1JPzjByrF19fGuFlNbmPpiw==",
       "type": "package",
-      "path": "system.linq/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/net463/System.Linq.dll",
-        "lib/netcore50/System.Linq.dll",
-        "lib/netstandard1.6/System.Linq.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/net463/System.Linq.dll",
-        "ref/netcore50/System.Linq.dll",
-        "ref/netcore50/System.Linq.xml",
-        "ref/netcore50/de/System.Linq.xml",
-        "ref/netcore50/es/System.Linq.xml",
-        "ref/netcore50/fr/System.Linq.xml",
-        "ref/netcore50/it/System.Linq.xml",
-        "ref/netcore50/ja/System.Linq.xml",
-        "ref/netcore50/ko/System.Linq.xml",
-        "ref/netcore50/ru/System.Linq.xml",
-        "ref/netcore50/zh-hans/System.Linq.xml",
-        "ref/netcore50/zh-hant/System.Linq.xml",
-        "ref/netstandard1.0/System.Linq.dll",
-        "ref/netstandard1.0/System.Linq.xml",
-        "ref/netstandard1.0/de/System.Linq.xml",
-        "ref/netstandard1.0/es/System.Linq.xml",
-        "ref/netstandard1.0/fr/System.Linq.xml",
-        "ref/netstandard1.0/it/System.Linq.xml",
-        "ref/netstandard1.0/ja/System.Linq.xml",
-        "ref/netstandard1.0/ko/System.Linq.xml",
-        "ref/netstandard1.0/ru/System.Linq.xml",
-        "ref/netstandard1.0/zh-hans/System.Linq.xml",
-        "ref/netstandard1.0/zh-hant/System.Linq.xml",
-        "ref/netstandard1.6/System.Linq.dll",
-        "ref/netstandard1.6/System.Linq.xml",
-        "ref/netstandard1.6/de/System.Linq.xml",
-        "ref/netstandard1.6/es/System.Linq.xml",
-        "ref/netstandard1.6/fr/System.Linq.xml",
-        "ref/netstandard1.6/it/System.Linq.xml",
-        "ref/netstandard1.6/ja/System.Linq.xml",
-        "ref/netstandard1.6/ko/System.Linq.xml",
-        "ref/netstandard1.6/ru/System.Linq.xml",
-        "ref/netstandard1.6/zh-hans/System.Linq.xml",
-        "ref/netstandard1.6/zh-hant/System.Linq.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.linq.4.3.0.nupkg.sha512",
-        "system.linq.nuspec"
-      ]
-    },
-    "System.Management/4.5.0": {
-      "sha512": "Z6ac0qPGr3yJtwZEX1SRkhwWa0Kf5NJxx7smLboYsGrApQFECNFdqhGy252T4lrZ5Nwzhd9VQiaifndR3bfHdg==",
-      "type": "package",
-      "path": "system.management/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net45/_._",
-        "lib/netstandard2.0/System.Management.dll",
-        "ref/net45/_._",
-        "ref/netstandard2.0/System.Management.dll",
-        "runtimes/win/lib/net45/_._",
-        "runtimes/win/lib/netcoreapp2.0/System.Management.dll",
-        "system.management.4.5.0.nupkg.sha512",
-        "system.management.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
-      "sha512": "wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
-      "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "path": "system.runtime.compilerservices.unsafe/4.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2009,281 +1797,10 @@
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "System.Runtime.Extensions/4.3.1": {
-      "sha512": "qAtKMcHOAq9/zKkl0dwvF0T0pmgCQxX1rC49rJXoU8jq+lw6MC3uXy7nLFmjEI20T3Aq069eWz4LcYR64vEmJw==",
-      "type": "package",
-      "path": "system.runtime.extensions/4.3.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/net462/System.Runtime.Extensions.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/net462/System.Runtime.Extensions.dll",
-        "ref/netcore50/System.Runtime.Extensions.dll",
-        "ref/netcore50/System.Runtime.Extensions.xml",
-        "ref/netcore50/de/System.Runtime.Extensions.xml",
-        "ref/netcore50/es/System.Runtime.Extensions.xml",
-        "ref/netcore50/fr/System.Runtime.Extensions.xml",
-        "ref/netcore50/it/System.Runtime.Extensions.xml",
-        "ref/netcore50/ja/System.Runtime.Extensions.xml",
-        "ref/netcore50/ko/System.Runtime.Extensions.xml",
-        "ref/netcore50/ru/System.Runtime.Extensions.xml",
-        "ref/netcore50/zh-hans/System.Runtime.Extensions.xml",
-        "ref/netcore50/zh-hant/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/System.Runtime.Extensions.dll",
-        "ref/netstandard1.0/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/de/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/es/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/fr/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/it/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/ja/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/ko/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/ru/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/zh-hans/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/zh-hant/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/System.Runtime.Extensions.dll",
-        "ref/netstandard1.3/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/de/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/es/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/fr/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/it/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/ja/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/ko/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/ru/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/zh-hans/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/zh-hant/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/System.Runtime.Extensions.dll",
-        "ref/netstandard1.5/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/de/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/es/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/fr/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/it/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/ja/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/ko/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/ru/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/zh-hans/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/zh-hant/System.Runtime.Extensions.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.runtime.extensions.4.3.1.nupkg.sha512",
-        "system.runtime.extensions.nuspec"
-      ]
-    },
-    "System.Text.Encoding.CodePages/4.5.1": {
-      "sha512": "4J2JQXbftjPMppIHJ7IC+VXQ9XfEagN92vZZNoG12i+zReYlim5dMoXFC1Zzg7tsnKDM7JPo5bYfFK4Jheq44w==",
-      "type": "package",
-      "path": "system.text.encoding.codepages/4.5.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Text.Encoding.CodePages.dll",
-        "lib/net461/System.Text.Encoding.CodePages.dll",
-        "lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
-        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
-        "system.text.encoding.codepages.4.5.1.nupkg.sha512",
-        "system.text.encoding.codepages.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Text.RegularExpressions/4.3.1": {
-      "sha512": "N0kNRrWe4+nXOWlpLT4LAY5brb8caNFlUuIRpraCVMDLYutKkol1aV079rQjLuSxKMJT2SpBQsYX9xbcTMmzwg==",
-      "type": "package",
-      "path": "system.text.regularexpressions/4.3.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/net463/System.Text.RegularExpressions.dll",
-        "lib/netcore50/System.Text.RegularExpressions.dll",
-        "lib/netstandard1.6/System.Text.RegularExpressions.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/net463/System.Text.RegularExpressions.dll",
-        "ref/netcore50/System.Text.RegularExpressions.dll",
-        "ref/netcore50/System.Text.RegularExpressions.xml",
-        "ref/netcore50/de/System.Text.RegularExpressions.xml",
-        "ref/netcore50/es/System.Text.RegularExpressions.xml",
-        "ref/netcore50/fr/System.Text.RegularExpressions.xml",
-        "ref/netcore50/it/System.Text.RegularExpressions.xml",
-        "ref/netcore50/ja/System.Text.RegularExpressions.xml",
-        "ref/netcore50/ko/System.Text.RegularExpressions.xml",
-        "ref/netcore50/ru/System.Text.RegularExpressions.xml",
-        "ref/netcore50/zh-hans/System.Text.RegularExpressions.xml",
-        "ref/netcore50/zh-hant/System.Text.RegularExpressions.xml",
-        "ref/netcoreapp1.1/System.Text.RegularExpressions.dll",
-        "ref/netstandard1.0/System.Text.RegularExpressions.dll",
-        "ref/netstandard1.0/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.0/de/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.0/es/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.0/fr/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.0/it/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.0/ja/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.0/ko/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.0/ru/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.0/zh-hans/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.0/zh-hant/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.3/System.Text.RegularExpressions.dll",
-        "ref/netstandard1.3/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.3/de/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.3/es/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.3/fr/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.3/it/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.3/ja/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.3/ko/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.3/ru/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.3/zh-hans/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.3/zh-hant/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.6/System.Text.RegularExpressions.dll",
-        "ref/netstandard1.6/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.6/de/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.6/es/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.6/fr/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.6/it/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.6/ja/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.6/ko/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.6/ru/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.6/zh-hans/System.Text.RegularExpressions.xml",
-        "ref/netstandard1.6/zh-hant/System.Text.RegularExpressions.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.text.regularexpressions.4.3.1.nupkg.sha512",
-        "system.text.regularexpressions.nuspec"
-      ]
-    },
-    "System.Threading/4.3.0": {
-      "sha512": "VkUS0kOBcUf3Wwm0TSbrevDDZ6BlM+b/HRiapRFWjM5O0NS0LviG0glKmFK+hhPDd1XFeSdU1GmlLhb2CoVpIw==",
-      "type": "package",
-      "path": "system.threading/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/netcore50/System.Threading.dll",
-        "lib/netstandard1.3/System.Threading.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/System.Threading.dll",
-        "ref/netcore50/System.Threading.xml",
-        "ref/netcore50/de/System.Threading.xml",
-        "ref/netcore50/es/System.Threading.xml",
-        "ref/netcore50/fr/System.Threading.xml",
-        "ref/netcore50/it/System.Threading.xml",
-        "ref/netcore50/ja/System.Threading.xml",
-        "ref/netcore50/ko/System.Threading.xml",
-        "ref/netcore50/ru/System.Threading.xml",
-        "ref/netcore50/zh-hans/System.Threading.xml",
-        "ref/netcore50/zh-hant/System.Threading.xml",
-        "ref/netstandard1.0/System.Threading.dll",
-        "ref/netstandard1.0/System.Threading.xml",
-        "ref/netstandard1.0/de/System.Threading.xml",
-        "ref/netstandard1.0/es/System.Threading.xml",
-        "ref/netstandard1.0/fr/System.Threading.xml",
-        "ref/netstandard1.0/it/System.Threading.xml",
-        "ref/netstandard1.0/ja/System.Threading.xml",
-        "ref/netstandard1.0/ko/System.Threading.xml",
-        "ref/netstandard1.0/ru/System.Threading.xml",
-        "ref/netstandard1.0/zh-hans/System.Threading.xml",
-        "ref/netstandard1.0/zh-hant/System.Threading.xml",
-        "ref/netstandard1.3/System.Threading.dll",
-        "ref/netstandard1.3/System.Threading.xml",
-        "ref/netstandard1.3/de/System.Threading.xml",
-        "ref/netstandard1.3/es/System.Threading.xml",
-        "ref/netstandard1.3/fr/System.Threading.xml",
-        "ref/netstandard1.3/it/System.Threading.xml",
-        "ref/netstandard1.3/ja/System.Threading.xml",
-        "ref/netstandard1.3/ko/System.Threading.xml",
-        "ref/netstandard1.3/ru/System.Threading.xml",
-        "ref/netstandard1.3/zh-hans/System.Threading.xml",
-        "ref/netstandard1.3/zh-hant/System.Threading.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/aot/lib/netcore50/System.Threading.dll",
-        "system.threading.4.3.0.nupkg.sha512",
-        "system.threading.nuspec"
       ]
     },
     "System.ValueTuple/4.5.0": {
@@ -2543,10 +2060,321 @@
         "uipath.ocr.contracts.nuspec"
       ]
     },
-    "UiPath.System.Activities/19.12.0-preview": {
-      "sha512": "YqbutEDOmNuOetTNaC1XLLl59NoJiaydFQLie+vhEjNmnLIyYtf6A9tBPJko7vGCmjZXi3a9bHNDKoU7lv3Caw==",
+    "UiPath.OmniPage.Activities/1.3.0-preview": {
+      "sha512": "3tSnjfOkx8detS/6qHRH9z4qapVCo9kPhBC7fLM9hzmkZYyZRjyjMpUFG8QE+EZYIHaiWJudgRNgifmJy0SbEA==",
       "type": "package",
-      "path": "uipath.system.activities/19.12.0-preview",
+      "path": "uipath.omnipage.activities/1.3.0-preview",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/AForge.Imaging.dll",
+        "build/AForge.Math.dll",
+        "build/AForge.dll",
+        "build/NLog.dll",
+        "build/Newtonsoft.Json.dll",
+        "build/Nuance OmniPage Capture SDK_20.0.lcxz",
+        "build/System.Collections.Immutable.dll",
+        "build/UiPath.Activities.Api.Base.dll",
+        "build/UiPath.Api.Base.dll",
+        "build/UiPath.OCR.Contracts.dll",
+        "build/UiPath.OmniPage.Activities.Design.dll",
+        "build/UiPath.OmniPage.Activities.dll",
+        "build/UiPath.OmniPage.Host32.exe",
+        "build/UiPath.OmniPage.Host32.exe.config",
+        "build/UiPath.Robot.Activities.Api.dll",
+        "build/UiPath.Studio.Activities.Api.dll",
+        "build/UiPath.Studio.Api.Base.dll",
+        "build/UiPath.Vision.OmniPage.Core.dll",
+        "build/UiPath.Vision.OmniPage.dll",
+        "build/nlog.config",
+        "lib/net452/UiPath.OmniPage.Activities.Design.dll",
+        "lib/net452/UiPath.OmniPage.Activities.dll",
+        "lib/net452/UiPath.OmniPage.Host32.exe",
+        "lib/net452/UiPath.Vision.OmniPage.Core.dll",
+        "lib/net452/UiPath.Vision.OmniPage.dll",
+        "lib/net452/de/UiPath.OmniPage.Activities.Design.resources.dll",
+        "lib/net452/de/UiPath.OmniPage.Activities.resources.dll",
+        "lib/net452/es-MX/UiPath.OmniPage.Activities.Design.resources.dll",
+        "lib/net452/es-MX/UiPath.OmniPage.Activities.resources.dll",
+        "lib/net452/es/UiPath.OmniPage.Activities.Design.resources.dll",
+        "lib/net452/es/UiPath.OmniPage.Activities.resources.dll",
+        "lib/net452/fr/UiPath.OmniPage.Activities.Design.resources.dll",
+        "lib/net452/fr/UiPath.OmniPage.Activities.resources.dll",
+        "lib/net452/ja/UiPath.OmniPage.Activities.Design.resources.dll",
+        "lib/net452/ja/UiPath.OmniPage.Activities.resources.dll",
+        "lib/net452/ko/UiPath.OmniPage.Activities.Design.resources.dll",
+        "lib/net452/ko/UiPath.OmniPage.Activities.resources.dll",
+        "lib/net452/pt-BR/UiPath.OmniPage.Activities.Design.resources.dll",
+        "lib/net452/pt-BR/UiPath.OmniPage.Activities.resources.dll",
+        "lib/net452/pt/UiPath.OmniPage.Activities.Design.resources.dll",
+        "lib/net452/pt/UiPath.OmniPage.Activities.resources.dll",
+        "lib/net452/ru/UiPath.OmniPage.Activities.Design.resources.dll",
+        "lib/net452/ru/UiPath.OmniPage.Activities.resources.dll",
+        "lib/net452/tr/UiPath.OmniPage.Activities.Design.resources.dll",
+        "lib/net452/tr/UiPath.OmniPage.Activities.resources.dll",
+        "lib/net452/zh-CN/UiPath.OmniPage.Activities.Design.resources.dll",
+        "lib/net452/zh-CN/UiPath.OmniPage.Activities.resources.dll",
+        "uipath.omnipage.activities.1.3.0-preview.nupkg.sha512",
+        "uipath.omnipage.activities.nuspec"
+      ]
+    },
+    "UiPath.OmniPage.Bundle/1.0.1": {
+      "sha512": "qZp+lIMq8QEmcmXiQfNCqvgZSFFp3rbuQjmgLziPolj+OA/iDf3ImdGTTrW+yWx0fmxfPzaqcXjmroOwzxvGsQ==",
+      "type": "package",
+      "path": "uipath.omnipage.bundle/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/UiPath.OmniPage.Bundle.targets",
+        "lib/net452/AppHelper.dll",
+        "lib/net452/AppProductConfig.dll",
+        "lib/net452/AppUtils.dll",
+        "lib/net452/BALTIC.shp",
+        "lib/net452/Bnt.dll",
+        "lib/net452/Bold300.knb",
+        "lib/net452/CRX.dll",
+        "lib/net452/CYRILLIC.shp",
+        "lib/net452/CharSetTable.chr",
+        "lib/net452/ConvSettings.sts",
+        "lib/net452/DISTR_TST.exe",
+        "lib/net452/Defaults.dll",
+        "lib/net452/ErrMsg.txz",
+        "lib/net452/FireWrx2.dll",
+        "lib/net452/FireWrx3.dll",
+        "lib/net452/FireWrx4.dll",
+        "lib/net452/FireWrx5.dll",
+        "lib/net452/FireWrx6.dll",
+        "lib/net452/Firewrx.dll",
+        "lib/net452/Formatter.dll",
+        "lib/net452/GREEK.shp",
+        "lib/net452/ICDLLW32.dll",
+        "lib/net452/ICHUNW32.dll",
+        "lib/net452/IF_PNG.dll",
+        "lib/net452/IPP_OmniPage.dlm",
+        "lib/net452/KernelAPI.dll",
+        "lib/net452/LATIN1.shp",
+        "lib/net452/LATIN2.shp",
+        "lib/net452/LEditor.dll",
+        "lib/net452/LecsoMgr.dll",
+        "lib/net452/ME_ConverterMgr.dlm",
+        "lib/net452/ME_D2D.dlm",
+        "lib/net452/ME_DocMgr.dlm",
+        "lib/net452/ME_WFAssist.dlm",
+        "lib/net452/ME_WFMgr.dlm",
+        "lib/net452/ME_WFView.dlm",
+        "lib/net452/MiddleEarth.dll",
+        "lib/net452/Mor.dll",
+        "lib/net452/Mor2.dll",
+        "lib/net452/Mor3.dll",
+        "lib/net452/Mor4.dll",
+        "lib/net452/Mor5.dll",
+        "lib/net452/Mor6.dll",
+        "lib/net452/MorIF.dll",
+        "lib/net452/Nuance.OmniPage.CSDK.ArgTypes.dll",
+        "lib/net452/Nuance.OmniPage.CSDK.CAPI.dll",
+        "lib/net452/Nuance.OmniPage.CSDK.Objects.dll",
+        "lib/net452/PreRendering.dll",
+        "lib/net452/R_CAT.DAT",
+        "lib/net452/R_CZH.DAT",
+        "lib/net452/R_DAN.DAT",
+        "lib/net452/R_DUT.DAT",
+        "lib/net452/R_ENG.DAT",
+        "lib/net452/R_FIN.DAT",
+        "lib/net452/R_FRE.DAT",
+        "lib/net452/R_GER.DAT",
+        "lib/net452/R_GRE.DAT",
+        "lib/net452/R_HUN.DAT",
+        "lib/net452/R_ITA.DAT",
+        "lib/net452/R_NOR.DAT",
+        "lib/net452/R_POL.DAT",
+        "lib/net452/R_POR.DAT",
+        "lib/net452/R_RUS.DAT",
+        "lib/net452/R_SLN.DMD",
+        "lib/net452/R_SPA.DAT",
+        "lib/net452/R_SWE.DAT",
+        "lib/net452/RecAPIPlus.dll",
+        "lib/net452/RecDiag.dll",
+        "lib/net452/RecPDFNet.dll",
+        "lib/net452/Recogn.bct",
+        "lib/net452/Recogn24.bct",
+        "lib/net452/Rendering.dll",
+        "lib/net452/Rendering2.dll",
+        "lib/net452/SPDFLib.dll",
+        "lib/net452/SkinnedClasses.dll",
+        "lib/net452/SkinnedWindows.dll",
+        "lib/net452/TURKISH.shp",
+        "lib/net452/UiPath.OmniPage.Bundle.dll",
+        "lib/net452/WM_OPActions.dlm",
+        "lib/net452/WM_OPSteps.dlm",
+        "lib/net452/WM_OPUIActions.dlm",
+        "lib/net452/XIBRTB.BIN",
+        "lib/net452/XIBRTC.BIN",
+        "lib/net452/XIBRTD.BIN",
+        "lib/net452/XIBRTE.BIN",
+        "lib/net452/XIBRTP.BIN",
+        "lib/net452/XIBRTS.BIN",
+        "lib/net452/XIBRTZ.BIN",
+        "lib/net452/XIBRZB.BIN",
+        "lib/net452/XIBRZC.BIN",
+        "lib/net452/XIBRZD.BIN",
+        "lib/net452/XIBRZE.BIN",
+        "lib/net452/XIBRZP.BIN",
+        "lib/net452/XIBRZS.BIN",
+        "lib/net452/XIBRZZ.BIN",
+        "lib/net452/XIDANB.BIN",
+        "lib/net452/XIDANC.BIN",
+        "lib/net452/XIDAND.BIN",
+        "lib/net452/XIDANE.BIN",
+        "lib/net452/XIDANP.BIN",
+        "lib/net452/XIDANS.BIN",
+        "lib/net452/XIDANZ.BIN",
+        "lib/net452/XIDUTB.BIN",
+        "lib/net452/XIDUTC.BIN",
+        "lib/net452/XIDUTD.BIN",
+        "lib/net452/XIDUTE.BIN",
+        "lib/net452/XIDUTP.BIN",
+        "lib/net452/XIDUTS.BIN",
+        "lib/net452/XIDUTZ.BIN",
+        "lib/net452/XIFINB.BIN",
+        "lib/net452/XIFINC.BIN",
+        "lib/net452/XIFIND.BIN",
+        "lib/net452/XIFINE.BIN",
+        "lib/net452/XIFINP.BIN",
+        "lib/net452/XIFINS.BIN",
+        "lib/net452/XIFINZ.BIN",
+        "lib/net452/XIFRNB.BIN",
+        "lib/net452/XIFRNC.BIN",
+        "lib/net452/XIFRND.BIN",
+        "lib/net452/XIFRNE.BIN",
+        "lib/net452/XIFRNP.BIN",
+        "lib/net452/XIFRNS.BIN",
+        "lib/net452/XIFRNZ.BIN",
+        "lib/net452/XIGRMB.BIN",
+        "lib/net452/XIGRMC.BIN",
+        "lib/net452/XIGRMD.BIN",
+        "lib/net452/XIGRME.BIN",
+        "lib/net452/XIGRMP.BIN",
+        "lib/net452/XIGRMS.BIN",
+        "lib/net452/XIGRMZ.BIN",
+        "lib/net452/XIITLB.BIN",
+        "lib/net452/XIITLC.BIN",
+        "lib/net452/XIITLD.BIN",
+        "lib/net452/XIITLE.BIN",
+        "lib/net452/XIITLP.BIN",
+        "lib/net452/XIITLS.BIN",
+        "lib/net452/XIITLZ.BIN",
+        "lib/net452/XINRWB.BIN",
+        "lib/net452/XINRWC.BIN",
+        "lib/net452/XINRWD.BIN",
+        "lib/net452/XINRWE.BIN",
+        "lib/net452/XINRWP.BIN",
+        "lib/net452/XINRWS.BIN",
+        "lib/net452/XINRWZ.BIN",
+        "lib/net452/XIPRTB.BIN",
+        "lib/net452/XIPRTC.BIN",
+        "lib/net452/XIPRTD.BIN",
+        "lib/net452/XIPRTE.BIN",
+        "lib/net452/XIPRTP.BIN",
+        "lib/net452/XIPRTS.BIN",
+        "lib/net452/XIPRTZ.BIN",
+        "lib/net452/XISPNB.BIN",
+        "lib/net452/XISPNC.BIN",
+        "lib/net452/XISPND.BIN",
+        "lib/net452/XISPNE.BIN",
+        "lib/net452/XISPNP.BIN",
+        "lib/net452/XISPNS.BIN",
+        "lib/net452/XISPNZ.BIN",
+        "lib/net452/XISWDB.BIN",
+        "lib/net452/XISWDC.BIN",
+        "lib/net452/XISWDD.BIN",
+        "lib/net452/XISWDE.BIN",
+        "lib/net452/XISWDP.BIN",
+        "lib/net452/XISWDS.BIN",
+        "lib/net452/XISWDZ.BIN",
+        "lib/net452/Xiengb.bin",
+        "lib/net452/Xiengc.bin",
+        "lib/net452/Xiengd.bin",
+        "lib/net452/Xienge.bin",
+        "lib/net452/Xiengf.bin",
+        "lib/net452/Xiengp.bin",
+        "lib/net452/Xiengs.bin",
+        "lib/net452/Xiengz.bin",
+        "lib/net452/asciieng.lng",
+        "lib/net452/atm2lll.dll",
+        "lib/net452/czech.lng",
+        "lib/net452/danish.lng",
+        "lib/net452/dutch.lng",
+        "lib/net452/english.lng",
+        "lib/net452/finnish.lng",
+        "lib/net452/french.lng",
+        "lib/net452/german.lng",
+        "lib/net452/greek.lng",
+        "lib/net452/hungar.lng",
+        "lib/net452/italian.lng",
+        "lib/net452/jp2k_kdu_apps_vnew.dll",
+        "lib/net452/kdu_vnewR.dll",
+        "lib/net452/latin1.set",
+        "lib/net452/lpdata.bin",
+        "lib/net452/lpdata_russian.bin",
+        "lib/net452/msvcp140.dll",
+        "lib/net452/norsk.lng",
+        "lib/net452/pccext.dll",
+        "lib/net452/pccext2.dll",
+        "lib/net452/pccext3.dll",
+        "lib/net452/pccext4.dll",
+        "lib/net452/pccext5.dll",
+        "lib/net452/pccext6.dll",
+        "lib/net452/polish.lng",
+        "lib/net452/port.lng",
+        "lib/net452/recogn.duz",
+        "lib/net452/recogn.emp",
+        "lib/net452/recogn.set",
+        "lib/net452/recogn2.duz",
+        "lib/net452/rndsdawg.dll",
+        "lib/net452/rndsinso.dll",
+        "lib/net452/russian.lng",
+        "lib/net452/sami.set",
+        "lib/net452/spanish.lng",
+        "lib/net452/ssdoc-schema2.xml",
+        "lib/net452/ssdoc-schema3.xsd",
+        "lib/net452/swedish.lng",
+        "lib/net452/turkish.lng",
+        "lib/net452/vcruntime140.dll",
+        "lib/net452/vtdata.bin",
+        "lib/net452/xibrzd.dmd",
+        "lib/net452/xiczhd.dmd",
+        "lib/net452/xidand.dmd",
+        "lib/net452/xidutd.dmd",
+        "lib/net452/xiengd.dmd",
+        "lib/net452/xiengl.bin",
+        "lib/net452/xifind.dmd",
+        "lib/net452/xifrnd.dmd",
+        "lib/net452/xigred.dmd",
+        "lib/net452/xigrmd.dmd",
+        "lib/net452/xihund.dmd",
+        "lib/net452/xiintd.dmd",
+        "lib/net452/xiitld.dmd",
+        "lib/net452/xinrwd.dmd",
+        "lib/net452/xipold.dmd",
+        "lib/net452/xiprtd.dmd",
+        "lib/net452/xispnd.dmd",
+        "lib/net452/xiswdd.dmd",
+        "lib/net452/xiturd.dmd",
+        "lib/net452/xocr.dll",
+        "lib/net452/xocr2.dll",
+        "lib/net452/xocr3.dll",
+        "lib/net452/xocr32b.exe",
+        "lib/net452/xocr4.dll",
+        "lib/net452/xocr5.dll",
+        "lib/net452/xocr6.dll",
+        "uipath.omnipage.bundle.1.0.1.nupkg.sha512",
+        "uipath.omnipage.bundle.nuspec"
+      ]
+    },
+    "UiPath.System.Activities/20.2.0-preview": {
+      "sha512": "W8HSmSAlSyn7yMzCkHu5yl1Yp7FaThlLWSwk0VtmUGz3KCsvzJd94g11I9N+98aA2aj1B2qokwWQEI166jLJjA==",
+      "type": "package",
+      "path": "uipath.system.activities/20.2.0-preview",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2585,7 +2413,7 @@
         "lib/net461/tr/UiPath.System.Activities.resources.dll",
         "lib/net461/zh-CN/UiPath.System.Activities.Design.resources.dll",
         "lib/net461/zh-CN/UiPath.System.Activities.resources.dll",
-        "uipath.system.activities.19.12.0-preview.nupkg.sha512",
+        "uipath.system.activities.20.2.0-preview.nupkg.sha512",
         "uipath.system.activities.nuspec"
       ]
     },
@@ -2801,32 +2629,20 @@
         "uipath.vision.2.0.0.nupkg.sha512",
         "uipath.vision.nuspec"
       ]
-    },
-    "WebSocketSharp/1.0.3-rc11": {
-      "sha512": "7VCF7f7zVMOvLGD8LeGS4DVXc8lOcB6kXnUMeTxigu+PMiU+6wW5Olq2gYrDU8vDRKOwFY+5RyBaLyzb8skEzA==",
-      "type": "package",
-      "path": "websocketsharp/1.0.3-rc11",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/websocket-sharp.dll",
-        "lib/websocket-sharp.xml",
-        "websocketsharp.1.0.3-rc11.nupkg.sha512",
-        "websocketsharp.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
-      "ChromeHtmlToPdf >= 1.4.7 <= 1.4.7",
+      "ChromeHtmlToPdf >= 1.5.3 <= 1.5.3",
       "Chromium.ChromeDriver >= 2.37.0 <= 2.37.0",
       "Microsoft.Activities.Extensions >= 2.0.6.9 <= 2.0.6.9",
       "Selenium.Chrome.WebDriver >= 79.0.0 <= 79.0.0",
       "UiPath.Excel.Activities >= 2.8.0-preview <= 2.8.0-preview",
       "UiPath.Mail.Activities >= 1.8.0-preview <= 1.8.0-preview",
       "UiPath.MicrosoftOffice365.Activities >= 1.1.2 <= 1.1.2",
-      "UiPath.System.Activities >= 19.12.0-preview <= 19.12.0-preview",
+      "UiPath.OmniPage.Activities >= 1.3.0-preview <= 1.3.0-preview",
+      "UiPath.System.Activities >= 20.2.0-preview <= 20.2.0-preview",
       "UiPath.UIAutomation.Activities >= 19.12.0-preview <= 19.12.0-preview"
     ]
   },
@@ -2847,7 +2663,7 @@
           "ChromeHtmlToPdf": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[1.4.7, 1.4.7]"
+            "version": "[1.5.3, 1.5.3]"
           },
           "Chromium.ChromeDriver": {
             "include": "Runtime",
@@ -2879,10 +2695,15 @@
             "target": "Package",
             "version": "[1.1.2, 1.1.2]"
           },
+          "UiPath.OmniPage.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.3.0-preview, 1.3.0-preview]"
+          },
           "UiPath.System.Activities": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[19.12.0-preview, 19.12.0-preview]"
+            "version": "[20.2.0-preview, 20.2.0-preview]"
           },
           "UiPath.UIAutomation.Activities": {
             "include": "Runtime",
@@ -2898,210 +2719,8 @@
       "code": "NU3034",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'DocumentFormat.OpenXml 2.7.2' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "DocumentFormat.OpenXml"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Chromium.ChromeDriver 2.37' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Chromium.ChromeDriver"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Collections.Specialized 4.3.0' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Collections.Specialized"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'BouncyCastle 1.8.2' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "BouncyCastle"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.IO.Packaging 4.0.0' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.IO.Packaging"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'MimeKit 2.1.3' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "MimeKit"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'AngleSharp.Css 0.12.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "AngleSharp.Css"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'ClosedXML 0.94.2' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "ClosedXML"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'FastMember 1.3.0' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "FastMember"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.IO.FileSystem.Primitives 4.0.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.IO.FileSystem.Primitives"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'ExcelNumberFormat 1.0.3' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "ExcelNumberFormat"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Graph.Core 1.12.0' from source 'https://gallery.uipath.com/api/v2': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.Graph.Core"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Graph 1.12.0' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.Graph"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'AngleSharp 0.12.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "AngleSharp"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Runtime.CompilerServices.Unsafe 4.5.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Runtime.CompilerServices.Unsafe"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Management 4.5.0' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Management"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'ChromeHtmlToPdf 1.4.7' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
+      "message": "Package 'ChromeHtmlToPdf 1.5.3' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
       "libraryId": "ChromeHtmlToPdf"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Selenium.Chrome.WebDriver 79.0.0' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Selenium.Chrome.WebDriver"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Identity.Client 2.7.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.Identity.Client"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Linq 4.3.0' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Linq"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Runtime.CompilerServices.Unsafe 4.5.2' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Runtime.CompilerServices.Unsafe"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Text.RegularExpressions 4.3.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Text.RegularExpressions"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Runtime.Extensions 4.3.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Runtime.Extensions"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Threading 4.3.0' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Threading"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'WebSocketSharp 1.0.3-rc11' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "WebSocketSharp"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Text.Encoding.CodePages 4.5.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Text.Encoding.CodePages"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Newtonsoft.Json 12.0.2' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Newtonsoft.Json"
-    },
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.Graph 1.12.0 requires Newtonsoft.Json (>= 6.0.1 && < 12.0.0) but version Newtonsoft.Json 12.0.2 was resolved.",
-      "libraryId": "Newtonsoft.Json",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.6.1"
-      ]
-    },
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.Graph.Core 1.12.0 requires Newtonsoft.Json (>= 6.0.1 && < 12.0.0) but version Newtonsoft.Json 12.0.2 was resolved.",
-      "libraryId": "Newtonsoft.Json",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.6.1"
-      ]
     }
   ]
 }
